@@ -74,6 +74,7 @@ app.delete('/quotes/:id', async (req, res) => {
     } else {
       res.status(404).json({message: "That quote doesn't exist."})
     }
+    
   } catch(err) {
     res.status(500).json({message: err.message});
   }
